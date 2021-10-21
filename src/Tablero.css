@@ -1,0 +1,40 @@
+#container{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+#workspace{
+  border: 4px solid rgb(5, 14, 31);
+  width: fit-content;
+
+}
+  #pixels{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+  }
+ 
+  #Printimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    background-color:#fff;
+  }
+  
+  #img{
+    height: 300px;
+    width: 300px;
+  }
+  
+  #intruction{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  
