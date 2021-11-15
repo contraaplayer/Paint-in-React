@@ -4,7 +4,7 @@ import './Tablero.css';
 import demo from "./deadpool.png"
 
 function Tablero(props) {
-
+    
     const [pressed, setPressed] = useState(false); //Estado para saber cuando esta presionado
 
     //Pinta cada cuadro cada que se haga click

@@ -1,4 +1,6 @@
-
+.App{
+    overflow: hidden;
+}
 body{
   background-color: #171717;
 }
@@ -77,4 +79,9 @@ h1{
 #printbtn:hover::after{
   transform: scale(200);
   background: red;
+}
+
+.paleta{
+  display: flex;
+  justify-content: center;
 }

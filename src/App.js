@@ -5,11 +5,12 @@ import Tablero from './Tablero.js'
 import html2canvas from 'html2canvas';
 
 
+
 function App() {
   let grid = [];//Arreglo donde se genera la cuadricula
   const [sgrid, setSgrid] = useState(grid);//Estado actual de la cuadricula
   const [borders, setBorders] = useState(true);//Cuando se manda a imprimir quitara los bordes del tablero
-  const [selectedColor, setSelectedColor] = useState('#FFFFFF'); //Color seleccionado de la paleta
+  const [selectedColor, setSelectedColor] = useState('#fff'); //Color seleccionado de la paleta
   const [draw, setDraw] = useState('empty'); //Se cambia a 'filled' cuando el usuario pinta 
   const [unclick, setUnclick] = useState(false);// Estado que se activara cuando se mande a immprimir y no dejara pintar hasta resetar el juego
 
@@ -54,18 +55,17 @@ function App() {
 
       <div className="header">
         <h1>Choose a color to start painting </h1>
-        <button className="btn" id="newbtn" type="reset"  onClick={resetGame}> <span>New game</span> </button>
+        <button className="btn" id="newbtn" type="reset"  onClick={resetGame}><span>New game</span> </button>
         <button className="btn" id="printbtn" type="button" onClick={printDraw}><span> Print</span> </button>
-        
-
+      </div>
+      <div className="paleta">
         {/* Componente que contiene la paleta de colores */}
         <Pallete
           selectedColor={selectedColor}
           setSelectedColor={setSelectedColor}
           pic={pic}
         />
-      </div>
-
+      </div>      
       {/* Componente que tiene el tablero de dibujo y la imagen de impresión  */}
       <Tablero
         selectedColor={selectedColor}
@@ -80,7 +80,6 @@ function App() {
         setBorders={setBorders}
         unclick={unclick}
         setUnclick={setUnclick} />
-
     </div>
   );
 }
