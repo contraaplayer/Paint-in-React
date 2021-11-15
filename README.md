@@ -1,8 +1,10 @@
-#Actualización
-Ahora la aplicación utiliza una api de colores a traves de axios con una petición https y se implementaron funciones asincronas que muestra una pantalla de carga donde el usuario debe esperar la paleta de colores para empezar a dibujar
+
 # Descripción
 
 La aplicación permite al usuario hacer dibujos donde el usuario puede elegir entre una gran variedad de colores para dibujar al presionar el click derecho del rato y dejara de dibujar al soltarlo. En el repositirio se encuentra el demo sobre el funcionamiento de la aplicación.
+
+# Actualización
+Ahora la aplicación utiliza una api de colores a traves de axios con una petición https y se implementaron funciones asincronas que muestra una pantalla de carga donde el usuario debe esperar la paleta de colores para empezar a dibujar
 
 ## Impresión
 
